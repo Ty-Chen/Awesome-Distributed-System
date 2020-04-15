@@ -28,10 +28,11 @@
 * #### 入门级介绍
     入门级介绍包括一些对于初步接入分布式的同学们很有帮助的文献资料，可以让你从零开始了解分布式出现的原因，基本的理念，大致的发展过程，一些最基础的原则等等，很有参考价值，大致包括以下这些
 
-  * [Introduction To Distributed Systems]()
-  * [The 8 fallacies of distributed computing]()
+  * [Introduction To Distributed Systems](https://pages.cs.wisc.edu/~zuyu/files/dist_systems.pdf) 本文是一篇启蒙式的文章，介绍了分布式系统方方面面的基本概念，适宜作为入门级的学习资料。
   
-  * [a note no distributed computing]()
+  * [The 8 fallacies of distributed computing](https://www.simpleorientedarchitecture.com/8-fallacies-of-distributed-systems/) 本文介绍的是对于分布式系统方面的一些错误的认知，不仅适用于分布式系统，对于其他网络领域也同样适用，非常值得一看。
+  
+  * [a note no distributed computing](https://doc.akka.io/docs/misc/smli_tr-94-29.pdf) 本文从分布式系统性能评估等角度出发，可以让你有一个全面的印象，也值得一看。
 
 ---
 
