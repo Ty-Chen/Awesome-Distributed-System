@@ -49,6 +49,10 @@
 
 * #### FLP Impossible
 
+[《A Brief Tour of FLP Impossibility》](https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/)
+
+[《Impossibility of Distributed Consensus with One Faulty Process》](https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf)
+
 ---
 
 * #### BASE
