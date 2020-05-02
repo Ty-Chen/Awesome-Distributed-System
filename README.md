@@ -56,12 +56,10 @@
 
 ---
 
-* #### BASE
-
----
-
-* #### ACID
-
+* #### BASE和ACID
+    BASE和ACID是两组相反的概念。
+    - ACID是Atomicity, Consistency, Isolation, and Durability的首字母缩写。
+    - BASE是Basically Available, Soft-state, Eventually consistent的首字母缩写。
 ---
 
 ### 共识算法
