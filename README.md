@@ -58,8 +58,8 @@
 
 * #### BASE和ACID
     BASE和ACID是两组相反的概念。
-    - ACID是Atomicity, Consistency, Isolation, and Durability的首字母缩写。
-    - BASE是Basically Available, Soft-state, Eventually consistent的首字母缩写。
+    - ACID是Atomicity, Consistency, Isolation, and Durability的首字母缩写，即原子性、一致性、隔离性和持久性。ACID是较为严格的要求，一般在关系型数据库中才会满足，是一个数据库是否支持事务的衡量标准。其最大的问题在于较高的要求会导致扩展性和灵活性下降，因此NoSQL一般不支持ACID，而是改为支持较为松散的BASE。
+    - BASE是Basically Available, Soft-state, Eventually consistent的首字母缩写，即基本可用性，软状态，最终一致性。BASE不像ACID一样时刻保持一致性和可用性，而是会容忍一定程度的不可用、不一致的存在。这在很多场合下其实是可以满足需要的。放低要求也就带来了性能的提升，所以具体如何设计一个分布式系统需要结合实际场景、实际需求来做。
 ---
 
 ### 共识算法
