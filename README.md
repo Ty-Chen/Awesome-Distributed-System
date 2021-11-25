@@ -66,7 +66,9 @@
 
 * #### Paxos
     Paxos算法是共识算法中最经典的算法，目前依然被大量的商业化软件使用。Paxos被公认较难理解，而且实现起来困难，因为作为一个纯学术理论的产物，设计伊始并未考虑工业界实现的难度。
-
+- 《A plain english introduction to CAP Theorem》一文用一个通俗易懂的事例讲述了CAP原理，可以作为入门读物。
+- 《CAP Theorem: Revisited》一文通过绘图和简洁的讲解说明了为什么只有可能出现CP或者AP而不存在CA模型。
+- 《The CAP FAQ》是Henry Robinson在github上发表的一系列FAQ，这里前排推荐这位大牛的博客，有很多不错的文章，如《Distributed systems theory for the distributed systems engineer》。
 ---
 
 
