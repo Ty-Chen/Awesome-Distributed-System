@@ -82,6 +82,10 @@
 
 * #### Zab
 
+    ZAB算法全称Zookeeper Atomic Broadcast，是Zookeeper中使用的共识算法，作为开源项目，广泛应用于Hadoop，HBase等之中。
+    
+    - 首先经典论文一定要学习，[《ZooKeeper’s atomic broadcast protocol: Theory and practice》](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fwww.tcs.hut.fi%2FStudies%2FT-79.5001%2Freports%2F2012-deSouzaMedeiros.pdf&clen=390931&chunk=true)
+
 ----
 
 * 拜占庭错误是怎么回事？为什么区块链用拜占庭容错算法？Paxos 算法不行吗？能黑比特币吗？
