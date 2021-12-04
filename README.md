@@ -44,6 +44,8 @@
    [拜占庭将军问题](https://en.wikipedia.org/wiki/Byzantine_fault)是分布式的经典入门问题，这个问题是莱斯利·兰波特（Leslie Lamport）于 1982 年提出用来解释一致性问题的一个虚构模型，并由该问题引出了分布式的重要理论：CAP、FLP和DLS。
    
    - [《The Byzantine Generals Problem》](https://dl.acm.org/doi/pdf/10.1145/3335772.3335936) 提出该问题的经典论文肯定是要先看一下的。
+   - [《Dr.Dobb’s - The Byzantine Generals Problem》](https://www.drdobbs.com/cpp/the-byzantine-generals-problem/206904396) DR.Doob's网站有很多很棒的文章，建议收藏。该文章对拜占庭将军问题的来龙去脉讲解的非常细腻，值得一看。
+   - [《Practical Byzantine Fault Tolerance》](https://www.usenix.org/legacy/publications/library/proceedings/osdi99/full_papers/castro/castro.ps) PBFT是第一个得到广泛应用的 BFT 算法。只要系统中有 2/3 的节点是正常工作的，则可以保证一致性。PBFT 算法包括三个阶段来达成共识：预准备（Pre-Prepare）、准备（Prepare）和提交（Commit）。
 
 ---
 
