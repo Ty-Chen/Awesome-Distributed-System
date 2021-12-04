@@ -34,6 +34,17 @@
   
   * [《a note no distributed computing》](https://doc.akka.io/docs/misc/smli_tr-94-29.pdf) 本文从分布式系统性能评估等角度出发，可以让你有一个全面的印象，也值得一看。
 
+  * [《Distributed Systems for Fun and Profit》](http://book.mixu.net/distsys/) 一本很薄的小书，但是涵盖了分布式系统各方面的基础理论，由浅入深，并提供了很多参考文献供以深入学习，是很棒的一本书。
+
+  * [《Notes on Distributed Systems for Young Bloods》](http://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/) 大佬对于分布式学习和新人入门的一些推荐及经验总结，值得一看。
+
+---
+* #### 拜占庭将军问题
+
+   [拜占庭将军问题](https://en.wikipedia.org/wiki/Byzantine_fault)是分布式的经典入门问题，这个问题是莱斯利·兰波特（Leslie Lamport）于 1982 年提出用来解释一致性问题的一个虚构模型，并由该问题引出了分布式的重要理论：CAP、FLP和DLS。
+   
+   - [《The Byzantine Generals Problem》](https://dl.acm.org/doi/pdf/10.1145/3335772.3335936) 提出该问题的经典论文肯定是要先看一下的。
+
 ---
 
 * #### CAP
