@@ -30,7 +30,7 @@
 
   * [《Introduction To Distributed Systems》](https://pages.cs.wisc.edu/~zuyu/files/dist_systems.pdf) 本文是一篇启蒙式的文章，介绍了分布式系统方方面面的基本概念，适宜作为入门级的学习资料。
   
-  * [《The 8 fallacies of distributed computing》](https://www.simpleorientedarchitecture.com/8-fallacies-of-distributed-systems/) 本文介绍的是对于分布式系统方面的一些错误的认知，不仅适用于分布式系统，对于其他网络领域也同样适用，非常值得一看。
+  * [《The 8 fallacies of distributed computing》](https://www.simpleorientedarchitecture.com/8-fallacies-of-distributed-systems/) 本文介绍的是对于分布式系统方面的一些错误的认知，不仅适用于分布式系统，对于其他网络领域也同样适用，非常值得一看。另外，发现了b站有转载一个[视频](https://www.bilibili.com/video/BV1ha4y1a7L7/?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2Mzg3MTM2MzIsImciOiJnWXBLRHlRdjZDWEdnSFRyIiwiaWF0IjoxNjM4NzEzMzMyLCJ1c2VySWQiOjB9.f5ixrNrsdMxZpnl0AGdno8Cw1II1SVydA3gAkeNA1ME)讲述这些误解，也可以看看。
   
   * [《a note no distributed computing》](https://doc.akka.io/docs/misc/smli_tr-94-29.pdf) 本文从分布式系统性能评估等角度出发，可以让你有一个全面的印象，也值得一看。
 
@@ -66,6 +66,20 @@
   - [《A Brief Tour of FLP Impossibility》](https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/)本文是一篇关于FLP不可能定理的解读文章，写的深入浅出非常厉害。
 
   - [《Impossibility of Distributed Consensus with One Faulty Process》](https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf)本文是论文原文，值得细读。
+
+---
+
+* #### DLS
+
+  DLS同样得名于作者，该论文给出了容错的上限，总结一下即
+  - 在部分同步（partially synchronous）的网络环境中（即网络延迟有一定的上限，但我们无法事先知道上限是多少），协议可以容忍最多 1/3 的拜占庭故障（Byzantine fault）。
+  - 在异步（asynchronous）的网络环境中，具有确定性质的协议无法容忍任何错误
+  - 在同步（synchronous）网络环境中（即网络延迟有上限且上限是已知的），协议可以容忍 100% 的拜占庭故障，但当超过 1/2 的节点为恶意节点时，会有一些限制条件。要注意的是，我们考虑的是"具有认证特性的拜占庭模型（authenticated Byzantine）"，而不是"一般的拜占庭模型"；具有认证特性指的是将如今已经过大量研究且成本低廉的公私钥加密机制应用在我们的算法中。
+
+  比较有价值的文献有
+  
+  - [《Consensus in the presence of partial synchrony》](https://dl.acm.org/doi/abs/10.1145/42282.42283)，即DLS原文，值得通篇阅读
+  - [《On optimal probabilistic asynchronous Byzantine agreement》](https://link.springer.com/chapter/10.1007/978-3-540-77444-0_7)，基于 DLS基础上对异步网络环境的深入研究，在这种情况下可以容忍最多 1/3 的拜占庭故障。
 
 ---
 
