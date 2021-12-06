@@ -91,6 +91,15 @@
 
 ### 共识算法
 
+* #### 两阶段提交和三阶段提交
+
+    两阶段提交和三阶段提交是共识算法的基础方法，也是广泛使用的共识算法，可以参考以下文献了解。
+    
+    - [《Consensus Protocols: Two-Phase Commit》](https://www.the-paper-trail.org/post/2008-11-27-consensus-protocols-two-phase-commit/)
+    - [《Consensus Protocols: Three-phase Commit》](https://www.the-paper-trail.org/post/2008-11-29-consensus-protocols-three-phase-commit/)
+
+---
+
 * #### Paxos
     Paxos算法是共识算法中最经典的算法，目前依然被大量的商业化软件使用。Paxos被公认较难理解，而且实现起来困难，因为作为一个纯学术理论的产物，设计伊始并未考虑工业界实现的难度。
   - [《A plain english introduction to CAP Theorem》](http://ksat.me/a-plain-english-introduction-to-cap-theorem)一文用一个通俗易懂的事例讲述了CAP原理，可以作为入门读物。
