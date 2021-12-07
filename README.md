@@ -111,7 +111,7 @@
 * #### Raft
     Raft算法是Paxos的改良版，因为由工业界提出，其初衷即为便于实现，因此是一个叫较为容易实现的工业级共识算法。
    - 首先Raft的经典论文[《In Search of an Understandable Consensus Algorithm》](https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/handouts/papers/raft-technicalReport.pdf) 当然是要认真学习的
-   - 然后相对于论文，有一个可视化的[算法演示网站](http://thesecretlivesofdata.com/raft/)也是不容错过的
+   - 然后相对于论文，有一个可视化的[算法演示网站](http://thesecretlivesofdata.com/raft/)也是不容错过的。
 
 ---
 
