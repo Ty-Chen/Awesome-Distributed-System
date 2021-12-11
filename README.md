@@ -92,7 +92,9 @@
 
 * #### 最终一致性
 
-
+   最终一致性来源于BASE，其中最出名的莫过于Dynamo的应用。
+   - [《Dynamo: Amazon’s Highly Available Key-value Store》](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) Dynamo是最终一致性的典型使用案例，该论文还有很多别的亮点，后面还会提到。
+   - [《Life beyond Distributed Transactions: an Apostate’s Opinion》](https://www.ics.uci.edu/~cs223/papers/cidr07p15.pdf)这篇也是必看论文。
 
 ---
 
