@@ -130,6 +130,8 @@
     ZAB算法全称Zookeeper Atomic Broadcast，是Zookeeper中使用的共识算法，作为开源项目，广泛应用于Hadoop，HBase等之中。
     
     - 首先经典论文一定要学习，[《ZooKeeper’s atomic broadcast protocol: Theory and practice》](http://www.tcs.hut.fi/Studies/T-79.5001/reports/2012-deSouzaMedeiros.pdf)
+    - 然后还有经典论文[《Zab: High-performance broadcast for primary-backup systems》](https://marcoserafini.github.io/papers/zab.pdf)
+    - 雅虎的论文也不容错过[《A simple totally ordered broadcast protocol》](http://diyhpl.us/~bryan/papers2/distributed/distributed-systems/zab.totally-ordered-broadcast-protocol.2008.pdf)
 
 ----
 
