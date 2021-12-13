@@ -133,9 +133,6 @@
     - 然后还有经典论文[《Zab: High-performance broadcast for primary-backup systems》](https://marcoserafini.github.io/papers/zab.pdf)
     - 雅虎的论文也不容错过[《A simple totally ordered broadcast protocol》](http://diyhpl.us/~bryan/papers2/distributed/distributed-systems/zab.totally-ordered-broadcast-protocol.2008.pdf)
 
-----
-
-* 拜占庭错误是怎么回事？为什么区块链用拜占庭容错算法？Paxos 算法不行吗？能黑比特币吗？
 
 ---
 
