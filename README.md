@@ -140,8 +140,12 @@
 
 ### 分布式锁
 
+   分布式锁，顾名思义是用于分布式系统的锁，其作用和多线程贡献资源时的锁本质上是一样的，只不过是在分布式的场景下，所以需要考虑更多的问题。这篇博客很值得一看[《How to do distributed locking》](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)。
 
 * #### Redis
+
+    - 官方指导文档[《Distributed locks with Redis》](https://redis.io/topics/distlock)肯定是要先看的
+
 
 ---
 
@@ -151,9 +155,13 @@
 
 * #### Chubby
 
+    - 《The Chubby lock service for loosely-coupled distributed systems》
+
 ---
 
 * #### Zookeeper
+
+    - 《The Chubby lock service for loosely-coupled distributed systems》
 
 ---
 
