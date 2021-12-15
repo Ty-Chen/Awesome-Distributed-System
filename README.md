@@ -155,13 +155,13 @@
 
 * #### Chubby
 
-    - 《The Chubby lock service for loosely-coupled distributed systems》
+    - [《The Chubby lock service for loosely-coupled distributed systems》](https://static.googleusercontent.com/media/research.google.com/zh-CN//archive/chubby-osdi06.pdf)
 
 ---
 
 * #### Zookeeper
 
-    - 《The Chubby lock service for loosely-coupled distributed systems》
+    - 《 ZooKeeper: Distributed Process Coordination》
 
 ---
 
