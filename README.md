@@ -161,7 +161,7 @@
 
 * #### Zookeeper
 
-    - 《 ZooKeeper: Distributed Process Coordination》
+    - [《 ZooKeeper: Distributed Process Coordination》](https://www.amazon.com/ZooKeeper-Distributed-Coordination-Flavio-Junqueira/dp/1449361307)
 
 ---
 
