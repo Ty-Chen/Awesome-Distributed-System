@@ -159,7 +159,9 @@
 
 * #### Chubby
 
-    - [《The Chubby lock service for loosely-coupled distributed systems》](https://static.googleusercontent.com/media/research.google.com/zh-CN//archive/chubby-osdi06.pdf)
+    Chubby是谷歌分布式领域的重要产品，Chubby的设计初衷是为了解决分布式系统中的一致性问题，其中最常见的就是分布式系统的选主需求及一致性的数据存储。Chubby选择通过提供粗粒度锁服务的方式实现。
+
+    - [《The Chubby lock service for loosely-coupled distributed systems》](https://static.googleusercontent.com/media/research.google.com/zh-CN//archive/chubby-osdi06.pdf)谷歌的经典介绍论文当然是必读的。
 
 ---
 
