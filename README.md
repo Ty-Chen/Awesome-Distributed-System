@@ -167,7 +167,11 @@
 
 * #### Zookeeper
 
-    - [《 ZooKeeper: Distributed Process Coordination》](https://www.amazon.com/ZooKeeper-Distributed-Coordination-Flavio-Junqueira/dp/1449361307)
+    Zookeeper是apache基金会下的一个软件项目，它为大型分布式计算提供开源的分布式配置服务、同步服务和命名注册，其中分布式锁也是一大功能。
+
+    - 想完整了解zookeeper可以参看[《 ZooKeeper: Distributed Process Coordination》](https://www.amazon.com/ZooKeeper-Distributed-Coordination-Flavio-Junqueira/dp/1449361307)，本书讲解较为详细，但是需要一定的时间才可以看完。
+    - 官网的介绍也可以一看[《ZooKeeper Recipes and Solutions》](https://zookeeper.apache.org/doc/r3.1.2/recipes.html#Shared+Locks)
+    - [《Redis and Zookeeper for distributed lock》](https://www.fatalerrors.org/a/redis-and-zookeeper-for-distributed-lock.html)这篇文章对redis和zookeeper的方案进行了比较，也值得一看
 
 ---
 
