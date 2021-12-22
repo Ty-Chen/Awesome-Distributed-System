@@ -144,8 +144,9 @@
    
    * #### Memcache
    Memcache由于其实现，本身做分布式锁不是很合适的选择，但是正因为其简单，可以作为了解分布式锁的入门级尝试，如
-    - [《A simple distributed lock with memcached》](https://bluxte.net/musings/2009/10/28/simple-distributed-lock-memcached/)
-     - [《Distributed resource locking using memcached》](https://source.coveo.com/2014/12/29/distributed-resource-locking/)
+   
+   - [《A simple distributed lock with memcached》](https://bluxte.net/musings/2009/10/28/simple-distributed-lock-memcached/)
+   - [《Distributed resource locking using memcached》](https://source.coveo.com/2014/12/29/distributed-resource-locking/)
 
 ---
 
