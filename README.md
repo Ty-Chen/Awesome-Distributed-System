@@ -143,7 +143,6 @@
    分布式锁，顾名思义是用于分布式系统的锁，其作用和多线程贡献资源时的锁本质上是一样的，只不过是在分布式的场景下，所以需要考虑更多的问题。这篇博客很值得一看[《How to do distributed locking》](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)。除此之外还有[《Leases: an efficient fault-tolerant mechanism for distributed file cache consistency》](https://dl.acm.org/doi/10.1145/74851.74870)值得学习。
    
    * #### Memcache
-
     Memcache由于其实现，本身做分布式锁不是很合适的选择，但是正因为其简单，可以作为了解分布式锁的入门级尝试，如
    - [《A simple distributed lock with memcached》](https://bluxte.net/musings/2009/10/28/simple-distributed-lock-memcached/)
    - [《Distributed resource locking using memcached》](https://source.coveo.com/2014/12/29/distributed-resource-locking/)
