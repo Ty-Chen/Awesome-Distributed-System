@@ -175,14 +175,6 @@
 
 ---
 
-### 分布式快照
-
-   通常分布式快照指的是Chandy-Lamport分布式快照算法，，用于再缺乏全局时钟或全局时钟不可靠的分布式系统中确定一个全局性的状态。
-   - [《Distributed Snapshots: Determining Global States of a Distributed System》](https://www.microsoft.com/en-us/research/uploads/prod/2016/12/Determining-Global-States-of-a-Distributed-System.pdf)只用认真阅读看懂这篇经典论文就够了。
-
----
-
-
 ### 分布式时钟
 
 
@@ -194,6 +186,12 @@
 
 ---
 
+### 分布式快照
+
+   通常分布式快照指的是Chandy-Lamport分布式快照算法，用于再缺乏全局时钟或全局时钟不可靠的分布式系统中确定一个全局性的状态。在理解了时序问题后，不难理解想要在某一时刻获取分布式系统的全局快照是一件不容易的事情，在论文中作者给出了一个有趣的比方：想要用一张照片拍摄一群纷飞的鸟群弄清每一只的位置是不容易的，而如果用多张照片拼接可以做到这一点，但是如何拼接就是技术活了，这也就是Chandy-Lamport算法。
+   - [《Distributed Snapshots: Determining Global States of a Distributed System》](https://www.microsoft.com/en-us/research/uploads/prod/2016/12/Determining-Global-States-of-a-Distributed-System.pdf)只用认真阅读看懂这篇经典论文就够了。
+
+---
 
 ### 错误检测
 
