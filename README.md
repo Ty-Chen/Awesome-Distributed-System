@@ -187,7 +187,7 @@
 
 * #### Lamport 时钟
 
-    - 经典论文[《Time, Clocks, and the Ordering of Events in a Distributed System》](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)必读
+    - 经典论文[《Time, Clocks, and the Ordering of Events in a Distributed System》](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)必读。
 ---
 
 * #### Vector 时钟
