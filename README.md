@@ -192,6 +192,8 @@
 
 * #### Vector 时钟
 
+    - [《Why Vector Clocks are Easy》](https://riak.com/why-vector-clocks-are-easy/)
+
 ---
 
 ### 分布式快照
