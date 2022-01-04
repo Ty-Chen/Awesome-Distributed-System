@@ -192,6 +192,8 @@
 
 * #### Vector 时钟
 
+    Vector时钟是基于Lamport时钟的改进版本。
+
     - [《Why Vector Clocks are Easy》](https://riak.com/why-vector-clocks-are-easy/)
 
 ---
