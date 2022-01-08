@@ -193,9 +193,14 @@
 
 * #### Vector 时钟
 
-    Vector时钟是基于Lamport时钟的改进版本。
+    Vector时钟是基于Lamport时钟的改进版本，旨在解决同时发生的事件的情况。
 
-    - [《Why Vector Clocks are Easy》](https://riak.com/why-vector-clocks-are-easy/)
+    - [《Why Vector Clocks are Easy》](https://riak.com/why-vector-clocks-are-easy/)这篇博客值得一读
+    - [wiki](https://en.wikipedia.org/wiki/Vector_clock)写得很好，值得一看
+
+* #### 分布式时钟同步综述
+
+    学习完Lamport时钟和Vector时钟后，可以看一下这篇综述，算是对分布式时钟问题的总结。《An Overview of Clock Synchronization》
 
 ---
 
