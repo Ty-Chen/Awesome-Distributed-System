@@ -200,7 +200,7 @@
 
 * #### 分布式时钟同步综述
 
-    学习完Lamport时钟和Vector时钟后，可以看一下这篇综述，算是对分布式时钟问题的总结。《An Overview of Clock Synchronization》
+    学习完Lamport时钟和Vector时钟后，可以看一下这篇综述，算是对分布式时钟问题的总结。[《An Overview of Clock Synchronization》](https://www.researchgate.net/profile/Barbara-Simons/publication/221655803_An_Overview_of_Clock_Synchronization/links/0f31753aa09bbbfaa6000000/An-Overview-of-Clock-Synchronization.pdf)。
 
 ---
 
