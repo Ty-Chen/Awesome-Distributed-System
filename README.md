@@ -214,6 +214,10 @@
 
 ### 错误检测
 
+    错误检测的难点在于准确度和覆盖度的权衡，以下资料值得学习。
+    
+    - [《Unreliable Failure Detectors for Reliable Distributed Systems》](http://courses.csail.mit.edu/6.852/08/papers/CT96-JACM.pdf)这篇文章是分布式错误检测的经典论文，文章较长，可以选看
+    - [《Survey on Scalable Failure Detectors》](http://www.scs.stanford.edu/14au-cs244b/labs/projects/song.pdf)这篇综述性的文章会比上文简短很多，建议学习。
 
 * #### Gossip
 
