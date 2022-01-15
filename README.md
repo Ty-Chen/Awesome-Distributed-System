@@ -87,13 +87,14 @@
     BASE和ACID是两组相反的概念。
     - ACID是Atomicity, Consistency, Isolation, and Durability的首字母缩写，即原子性、一致性、隔离性和持久性。ACID是较为严格的要求，一般在关系型数据库中才会满足，是一个数据库是否支持事务的衡量标准。其最大的问题在于较高的要求会导致扩展性和灵活性下降，因此NoSQL一般不支持ACID，而是改为支持较为松散的BASE。
     - BASE是Basically Available, Soft-state, Eventually consistent的首字母缩写，即基本可用性，软状态，最终一致性。BASE不像ACID一样时刻保持一致性和可用性，而是会容忍一定程度的不可用、不一致的存在。这在很多场合下其实是可以满足需要的。放低要求也就带来了性能的提升，所以具体如何设计一个分布式系统需要结合实际场景、实际需求来做。可以参考此文[《Base: An Acid Alternative》](https://queue.acm.org/detail.cfm?id=1394128)深入了解。
+    - 分布式事务是一个全新的概念，结合Google App Engine 联合创始人瑞恩·巴雷特（Ryan Barrett）在 2009 年的 Google I/O 大会上的演讲[《Transaction Across DataCenter》](https://snarfed.org/transactions_across_datacenters_io.html)（[YouTube 视频](https://www.youtube.com/watch?v=srOgpXECblk)）可以有更好的理解。
 
 ---
 
 * #### 最终一致性
 
-   最终一致性来源于BASE，其中最出名的莫过于Dynamo的应用。
-   - [《Dynamo: Amazon’s Highly Available Key-value Store》](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) Dynamo是最终一致性的典型使用案例，该论文还有很多别的亮点，后面还会提到。
+   - [《Eventually Consistent - Revisited》   ](https://www.allthingsdistributed.com/2008/12/eventually_consistent.html)，这篇文章是 AWS 的 CTO 维尔纳·沃格尔（Werner Vogels）在 2008 年发布在 ACM Queue 上的一篇数据库方面的重要文章，阐述了 NoSQL 数据库的理论基石——最终一致性，对传统的关系型数据库（ACID，Transaction）做了较好的补充。
+   - 最终一致性来源于BASE，其中最出名的莫过于Dynamo的应用。[《Dynamo: Amazon’s Highly Available Key-value Store》](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) Dynamo是最终一致性的典型使用案例，该论文还有很多别的亮点，后面还会提到。
    - [《Life beyond Distributed Transactions: an Apostate’s Opinion》](https://www.ics.uci.edu/~cs223/papers/cidr07p15.pdf)这篇也是必看论文。
 
 ---
@@ -323,6 +324,7 @@
 * #### Ceph
 
     - Ceph是一个开源的分布式对象，块和文件存储。Ceph已经与Linux内核KVM集成，并且默认包含在许多GNU / Linux发行版中。[《Ceph: A Scalable, High-Performance Distributed File System》](https://www.usenix.org/legacy/events/osdi06/tech/full_papers/weil/weil_html/)。
+    - Ceph的算法来源于另一篇文章：[《CRUSH: Controlled, Scalable, Decentralized Placement of Replicated Data》](https://www.ssrc.ucsc.edu/media/pubs/9c7bcd06ff4eeccef2cb4c7813fe33ba7d4805c7.pdf)。
 
 ---
 
@@ -353,6 +355,24 @@
 * #### AWS Aurora
 
    - Aurora 是 AWS 将 MySQL 的计算和存储分离后，计算节点 scale up，存储节点 scale out。并把其 redo log 独立设计成一个存储服务，把分布式的数据方面的东西全部甩给了底层存储系统。从而提高了整体的吞吐量和水平的扩展能力。[《Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases》](https://www.allthingsdistributed.com/files/p1041-verbitski.pdf)。
+
+---
+
+* #### Kafka
+
+    - 分布式消息系统的代表之作[《Kafka: a Distributed Messaging System for Log Processing》](http://notes.stephenholiday.com/Kafka.pdf)。
+
+---
+
+* #### Wormhole
+
+    - Wormhole是 Facebook 内部使用的一个 Pub-Sub 系统，目前还没有开源。它和 Kafka 之类的消息中间件很类似。但是它又不像其它的 Pub-Sub 系统，Wormhole 没有自己的存储来保存消息，它也不需要数据源在原有的更新路径上去插入一个操作来发送消息，是非侵入式的。其直接部署在数据源的机器上并直接扫描数据源的 transaction logs，这样还带来一个好处，Wormhole 本身不需要做任何地域复制（geo-replication）策略，只需要依赖于数据源的 geo-replication 策略即可。[《Wormhole: Reliable Pub-Sub to Support Geo-replicated Internet Services》](https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-sharma.pdf)。
+
+---
+
+* #### LinkedIn
+
+    - [《All Aboard the Databus! LinkedIn’s Scalable Consistent Change Data Capture Platform》 ](https://engineering.linkedin.com/research/2012/all-aboard-the-databus-linkedlns-scalable-consistent-change-data-capture-platform)， 在 LinkedIn 投稿 SOCC 2012 的这篇论文中，指出支持对不同数据源的抽取，允许不同数据源抽取器的开发和接入，只需该抽取器遵循设计规范即可。该规范的一个重要方面就是每个数据变化都必须被一个单调递增的数字标注（SCN），用于同步。这其中的一些方法完全可以用做异地双活的系统架构中。
 
 ---
 
