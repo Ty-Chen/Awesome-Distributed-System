@@ -17,7 +17,7 @@
 
 7. 链复制技术
 
-8. 实际分布式系统的了解
+8. 实际分布式系统
 
 9. 分布式运用
 
@@ -95,6 +95,16 @@
    最终一致性来源于BASE，其中最出名的莫过于Dynamo的应用。
    - [《Dynamo: Amazon’s Highly Available Key-value Store》](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) Dynamo是最终一致性的典型使用案例，该论文还有很多别的亮点，后面还会提到。
    - [《Life beyond Distributed Transactions: an Apostate’s Opinion》](https://www.ics.uci.edu/~cs223/papers/cidr07p15.pdf)这篇也是必看论文。
+
+---
+
+* #### 消息通知
+
+   分布式的消息通知通常采用广播传输，常见的方式有三种：原子广播、Gossip算法以及随机广播。
+   
+   - [原子广播](https://en.wikipedia.org/wiki/Atomic_broadcast)：在该广播中，分布式系统中的所有正确进程都以相同的顺序接收相同的消息集。广播被称为“原子”，因为它要么最终在所有参与者正确完成，或者所有的参与者放弃无副作用。[《Total Order Broadcast and Multicast Algorithms:Taxonomy and Survey》](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.3.4709&rep=rep1&type=pdf)
+   - [Gossip算法](https://en.wikipedia.org/wiki/Gossip_protocol)是分布式领域经典传输算法，经典论文为[《Epidemic Algorithms for Replicated . Database Maintenance》](http://bitsavers.informatik.uni-stuttgart.de/pdf/xerox/parc/techReports/CSL-89-1_Epidemic_Algorithms_for_Replicated_Database_Maintenance.pdf)。除此之外，[《Gossip Algorithms: Design, Analysis and Applications》](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.6176&rep=rep1&type=pdf)也非常值得一看。
+   - 随机广播来自于经典论文[《Lightweight Causal and Atomic Group Multicast》](https://www.cs.cornell.edu/courses/cs614/2003sp/papers/BSS91.pdf)，除此之外还有两篇对此深度思考及优化的论文很值得一读[《Understanding the Limitations of Causally and Totally Ordered Communication》](https://www.cs.rice.edu/~alc/comp520/papers/Cheriton_Skeen.pdf)、[《A Response to Cheriton and Skeen's Criticism of Causal and Totally Ordered Communication》](https://www.cs.princeton.edu/courses/archive/fall07/cos518/papers/catocs-limits-response.pdf)。
 
 ---
 
@@ -219,49 +229,110 @@
    - [《Unreliable Failure Detectors for Reliable Distributed Systems》](http://courses.csail.mit.edu/6.852/08/papers/CT96-JACM.pdf)这篇文章是分布式错误检测的经典论文，文章较长，可以选看
    - [《Survey on Scalable Failure Detectors》](http://www.scs.stanford.edu/14au-cs244b/labs/projects/song.pdf)这篇综述性的文章会比上文简短很多，建议学习。
 
-* #### Gossip
-
 ---
 
 ### 链复制技术
 
-
+   链复制技术将分布式系统视为虚拟的链表，并通过一定的方式进行顺序读写从而保障了数据的一致性。
+   
+   - 经典论文当然必读[《Chain Replication for Supporting High Throughput and Availability》](http://www.cs.cornell.edu/home/rvr/papers/OSDI04.pdf)
+   - 普林斯顿大佬基于基础理论进行了实践，并对算法进行了优化，值得学习和思考：[《Object Storage on CRAQ：High-throughput chain replication for read-mostly workloads》](https://www.usenix.org/legacy/event/usenix09/tech/full_papers/terrace/terrace.pdf)。本文的阅读重点应放在学习大佬如何思考、优化、解决问题的思维方式上。
+   - 另外还有一篇优化向的文章[《Chain Replication in Theory and in Practice》](http://diyhpl.us/~bryan/papers2/distributed/distributed-systems/chain-replication-in-theory-and-in-practice.2010.pdf)也很值得学习。
 
 ---
 
 
-### 实际分布式系统了解
+### 实际分布式系统
 
+   实际分布式系统会综合采用上面的某些技术而实现，需要注意的是，**设计架构是为了满足需求，合适的才是最好的**。在学习以下实际分布式系统的时候，应该先了解他们遇到了什么问题，有哪些需求，因此设计了怎样的分布式系统进行解决，解决中又遇到了什么问题，最终如何得到满意的结果。带着思考去阅读，然后边思考边总结，才能学到分布式系统的精髓。
 
 * #### Dynamo
+
+    - [《Dynamo: Amazon’s Highly Available Key-value Store》](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)经典之中的经典，必读。
 
 ---
 
 * #### GFS
 
+    - [《The Google File System》](http://static.googleusercontent.com/media/research.google.com/en/us/archive/gfs-sosp2003.pdf)大名鼎鼎的谷歌文件系统，三驾马车之一。
+
 ---
 
 * #### MapReduce
+
+   - [《MapReduce: Simplified Data Processing on Large Clusters》](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.324.78&rep=rep1&type=pdf)谷歌的大数据处理方案，三驾马车之一。
 
 ---
 
 * #### Bigtable
 
+   - [《Bigtable: A Distributed Storage System for Structured Data》](http://static.googleusercontent.com/media/research.google.com/en/us/archive/bigtable-osdi06.pdf)谷歌的大数据存储方案，三驾马车之一。
+
 ---
 
 * #### Chubby
 
----
-
-* #### F1
+  - 谷歌分布式锁，在上文分布式锁一节有所介绍。[《The Chubby lock service for loosely-coupled distributed systems》](http://static.googleusercontent.com/media/research.google.com/en/us/archive/chubby-osdi06.pdf)
 
 ---
 
 * #### SPANNER
 
+  - 谷歌的分布式数据库。[《Spanner: Google’s Globally-Distributed Database》](http://static.googleusercontent.com/media/research.google.com/en/us/archive/spanner-osdi2012.pdf)
+
 ---
 
-* #### ...
+* #### F1
+
+   - F1是Google开发的分布式关系型数据库，主要服务于Google的广告系统.Google的广告系统以前使用MySQL，广告系统的用户经常需要使用复杂的query和join操作，这就需要设计shard规则时格外注意，尽量将相关数据shard到同一台MySQL上。扩容时对数据reshard时也需要尽量保证这一点，广告系统扩容比较艰难。在可用性方面老的广告系统做的也不够，尤其是整个数据中心挂掉的情况，部分服务将不可用或者丢数据。对于广告系统来说，短暂的宕机服务不可用将带来重大的损失。为了解决扩容/高可用的问题，谷歌的专家们设计了基于Spanner的跨数据中心的分布式关系型数据库，支持ACID，支持全局索引。[《F1: A Distributed SQL Database That Scales》](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/41344.pdf)
+
+---
+
+* #### MillWheel
+
+   - MillWheel是谷歌内部使用的数据处理架构，[《MillWheel: Fault-Tolerant Stream Processing at Internet Scale》](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/41378.pdf)
+
+---
+
+* #### Omega
+
+   - 容器及自动化运行随着docker和kubernetes火爆全球，但是谷歌行动的却要更早，只是一直内部使用对外未公开。谷歌先后开发了Borg, Omega和Kubernetes用以进行大规模容器管理，都有其值得学习借鉴之处。[《Omega: flexible, scalable schedulers for large compute clusters》](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41684.pdf)
+   - 《Borg, Omega, and Kubernetes》可以了解三者中的差异。
+
+
+---
+
+* #### Dapper
+
+   - [《Dapper, a Large-Scale Distributed Systems Tracing Infrastructure》](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/36356.pdf)
+
+---
+
+* #### Dryad
+
+---
+
+* #### Cassandra
+
+---
+
+* #### Ceph
+
+---
+
+* #### RAMCloud
+
+---
+
+* #### HyperDex
+
+---
+
+* #### PNUTS
+
+---
+
+* #### Azure Data Lake Store
 
 ---
 
