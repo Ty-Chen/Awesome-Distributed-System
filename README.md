@@ -103,7 +103,7 @@
    分布式的消息通知通常采用广播传输，常见的方式有三种：原子广播、Gossip算法以及随机广播。
    
    - [原子广播](https://en.wikipedia.org/wiki/Atomic_broadcast)：在该广播中，分布式系统中的所有正确进程都以相同的顺序接收相同的消息集。广播被称为“原子”，因为它要么最终在所有参与者正确完成，或者所有的参与者放弃无副作用。[《Total Order Broadcast and Multicast Algorithms:Taxonomy and Survey》](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.3.4709&rep=rep1&type=pdf)
-   - [Gossip算法](https://en.wikipedia.org/wiki/Gossip_protocol)是分布式领域经典传输算法，经典论文为[《Epidemic Algorithms for Replicated . Database Maintenance》](http://bitsavers.informatik.uni-stuttgart.de/pdf/xerox/parc/techReports/CSL-89-1_Epidemic_Algorithms_for_Replicated_Database_Maintenance.pdf)。除此之外，[《Gossip Algorithms: Design, Analysis and Applications》](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.6176&rep=rep1&type=pdf)也非常值得一看。
+   - [Gossip算法](https://en.wikipedia.org/wiki/Gossip_protocol)是分布式领域经典传输算法，经典论文为[《Epidemic Algorithms for Replicated . Database Maintenance》](http://bitsavers.informatik.uni-stuttgart.de/pdf/xerox/parc/techReports/CSL-89-1_Epidemic_Algorithms_for_Replicated_Database_Maintenance.pdf)。除此之外，[《Gossip Algorithms: Design, Analysis and Applications》](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.6176&rep=rep1&type=pdf)也非常值得一看。还有一个[动图网站](https://rrmoelker.github.io/gossip-visualization/)也很棒。
    - 随机广播来自于经典论文[《Lightweight Causal and Atomic Group Multicast》](https://www.cs.cornell.edu/courses/cs614/2003sp/papers/BSS91.pdf)，除此之外还有两篇对此深度思考及优化的论文很值得一读[《Understanding the Limitations of Causally and Totally Ordered Communication》](https://www.cs.rice.edu/~alc/comp520/papers/Cheriton_Skeen.pdf)、[《A Response to Cheriton and Skeen's Criticism of Causal and Totally Ordered Communication》](https://www.cs.princeton.edu/courses/archive/fall07/cos518/papers/catocs-limits-response.pdf)。
 
 ---
@@ -278,7 +278,7 @@
 
 * #### SPANNER
 
-  - 谷歌的分布式数据库。[《Spanner: Google’s Globally-Distributed Database》](http://static.googleusercontent.com/media/research.google.com/en/us/archive/spanner-osdi2012.pdf)
+  - 谷歌的分布式数据库。Spanner 的扩展性达到了令人咋舌的全球级，可以扩展到数百万台机器，数以百计的数据中心，上万亿的行。更给力的是，除了夸张的扩展性之外，它还能同时通过同步复制和多版本来满足外部一致性，可用性也是很好的。[《Spanner: Google’s Globally-Distributed Database》](http://static.googleusercontent.com/media/research.google.com/en/us/archive/spanner-osdi2012.pdf)。另外多提一句，基于 Spanner 论文的开源实现有两个，一个是 Google 公司自己的人出来做的CockroachDB，另一个是国人做的TiDB。
 
 ---
 
@@ -347,6 +347,12 @@
 * #### Azure Data Lake Store
 
    - 来自微软的数据存储、分析架构，官方定义为：大规模可缩放且安全的数据湖，适用于高性能分析工作负载。[《Azure Data Lake Store: A Hyperscale Distributed File Service for Big Data Analytics》](https://dl.acm.org/doi/pdf/10.1145/3035918.3056100)
+
+---
+
+* #### AWS Aurora
+
+   - Aurora 是 AWS 将 MySQL 的计算和存储分离后，计算节点 scale up，存储节点 scale out。并把其 redo log 独立设计成一个存储服务，把分布式的数据方面的东西全部甩给了底层存储系统。从而提高了整体的吞吐量和水平的扩展能力。[《Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases》](https://www.allthingsdistributed.com/files/p1041-verbitski.pdf)。
 
 ---
 
