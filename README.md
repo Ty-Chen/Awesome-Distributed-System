@@ -304,35 +304,49 @@
 
 * #### Dapper
 
-   - [《Dapper, a Large-Scale Distributed Systems Tracing Infrastructure》](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/36356.pdf)
+   - [《Dapper, a Large-Scale Distributed Systems Tracing Infrastructure》](http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/36356.pdf)。
 
 ---
 
 * #### Dryad
 
+    - 微软的分布式并行计算框架，[官网](https://www.microsoft.com/en-us/research/project/dryad/)有简单的介绍，论文也值得学习 [《Dryad: distributed data-parallel programs from sequential building blocks》](https://cse.buffalo.edu/~stevko/courses/cse704/fall10/papers/eurosys07.pdf)。
+
 ---
 
 * #### Cassandra
+
+    - Apache Cassandra是一套开源分布式NoSQL数据库系统。它最初由Facebook开发，用于改善电子邮件系统的搜索性能的简单格式数据，集Google BigTable的数据模型与Amazon Dynamo的完全分布式架构于一身。[《Cassandra - A Decentralized Structured Storage System》](https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf)。
 
 ---
 
 * #### Ceph
 
+    - Ceph是一个开源的分布式对象，块和文件存储。Ceph已经与Linux内核KVM集成，并且默认包含在许多GNU / Linux发行版中。[《Ceph: A Scalable, High-Performance Distributed File System》](https://www.usenix.org/legacy/events/osdi06/tech/full_papers/weil/weil_html/)。
+
 ---
 
 * #### RAMCloud
+
+   - RamCloud是一种适用于大规模数据中心应用的高速存储，[《The RAMCloud Storage System》](https://dl.acm.org/doi/pdf/10.1145/2806887)。
 
 ---
 
 * #### HyperDex
 
+   - HyperDex是一种NoSQL键值存储的分布式数据存储架构， [《HyperDex: A Distributed, Searchable Key-Value Store》](https://www.cs.cornell.edu/people/egs/papers/hyperdex-sigcomm.pdf)。
+
 ---
 
 * #### PNUTS
 
+   - Yahoo!的PNUTS是一个分布式的数据存储平台，它是Yahoo!云计算平台重要的一部分，该架构考虑到大部分web应用对一致性并不要求非常严格，在设计上放弃了对强一致性的追求。代替的是追求更高的availability，容错，更快速的响应调用请求等。。[《PNUTS: Yahoo!’s Hosted Data Serving Platform》](https://people.mpi-sws.org/~druschel/courses/ds/papers/cooper-pnuts.pdf)。
+
 ---
 
 * #### Azure Data Lake Store
+
+   - 来自微软的数据存储、分析架构，官方定义为：大规模可缩放且安全的数据湖，适用于高性能分析工作负载。[《Azure Data Lake Store: A Hyperscale Distributed File Service for Big Data Analytics》](https://dl.acm.org/doi/pdf/10.1145/3035918.3056100)
 
 ---
 
@@ -345,18 +359,3 @@
 
 ---
 
-
----
-### 实际运用
-
-* #### 要实现数据副本的一致性，到底该选 Paxos 算法，还是 Raft 算法？
-
----
-
-* #### 为什么我的集群接入性能低？稍微出现峰值流量，为什么业务就基本不可用了？
-
----
-
-* #### 如何设计分布式系统架构呢？那么多算法，Paxos、Raft、Gossip、Nuorum NWR、PBFT 等等，究竟该选择哪个
-
----
