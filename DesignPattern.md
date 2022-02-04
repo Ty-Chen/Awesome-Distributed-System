@@ -7,7 +7,7 @@
 
 首先，需要重点推荐的是微软云平台 Azure 上的设计模式。 [Cloud Design Patterns ](https://docs.microsoft.com/en-us/azure/architecture/patterns/)，这个网站上罗列了分布式设计的各种设计模式，可以说是非常全面和完整。对于每一个模式都有详细的说明，并有对其优缺点的讨论，以及适用场景和不适用场景的说明，实在是一个非常不错的学习分布式设计模式的地方。其中有如下分类。
 
-- 设计模式：可用性；
+- [设计模式：可用性](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)；
 - 设计模式：数据管理；
 - 设计模式：设计和实现；
 - 设计模式：消息；
