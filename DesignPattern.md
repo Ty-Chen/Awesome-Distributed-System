@@ -9,7 +9,7 @@
 
 - [设计模式：可用性](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)；
 - [设计模式：数据管理](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management)；
-- 设计模式：设计和实现；
+- [设计模式：设计和实现](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation)；
 - 设计模式：消息；
 - 设计模式：管理和监控；
 - 设计模式：性能和扩展；
