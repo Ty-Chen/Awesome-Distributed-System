@@ -13,7 +13,7 @@
 - [设计模式：消息](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging)；
 - [设计模式：管理和监控](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/management-monitoring)；
 - [设计模式：性能和扩展](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/performance-scalability)；
-- 设计模式：系统弹力；
+- [设计模式：系统弹力](https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns)；
 - 设计模式：安全。
 
 ---
