@@ -19,7 +19,7 @@
 此之外，还有其它的一些关于分布式系统设计模式的网站和相关资料。
 
 - [AWS Cloud Pattern](http://en.clouddesignpattern.org/index.php/Main_Page) ，这里收集了 AWS 云平台的一些设计模式。
-- Design patterns for container-based distributed systems ，这是 Google 给的一篇论文，其中描述了容器化下的分布式架构的设计模式。
+- [Design patterns for container-based distributed systems](https://research.google.com/pubs/archive/45406.pdf) ，这是 Google 给的一篇论文，其中描述了容器化下的分布式架构的设计模式。
 - Patterns for distributed systems ，这是一个 PPT，其中讲了一些分布式系统的架构模式，你可以顺着到 Google 里去搜索。
 
 
