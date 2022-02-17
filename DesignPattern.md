@@ -28,6 +28,8 @@
 
 ## 弹力设计
 
+- [4 Architecture Issues When Scaling Web Applications: Bottlenecks, Database, CPU, IO](http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html) ，本文讲解了后端程序的主要性能指标，即响应时间和可伸缩性这两者如何能提高的解决方案，讨论了包括纵向和横向扩展，可伸缩架构、负载均衡、数据库的伸缩、CPU 密集型和 I/O 密集型程序的考量等。
+
 ---
 
 ## 管理设计
