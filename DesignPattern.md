@@ -28,7 +28,9 @@
 
 ## 弹力设计
 
-- [4 Architecture Issues When Scaling Web Applications: Bottlenecks, Database, CPU, IO](http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html) ，本文讲解了后端程序的主要性能指标，即响应时间和可伸缩性这两者如何能提高的解决方案，讨论了包括纵向和横向扩展，可伸缩架构、负载均衡、数据库的伸缩、CPU 密集型和 I/O 密集型程序的考量等。
+- [《4 Architecture Issues When Scaling Web Applications: Bottlenecks, Database, CPU, IO》](http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html) ，本文讲解了后端程序的主要性能指标，即响应时间和可伸缩性这两者如何能提高的解决方案，讨论了包括纵向和横向扩展，可伸缩架构、负载均衡、数据库的伸缩、CPU 密集型和 I/O 密集型程序的考量等。
+
+- [《Scaling Stateful Objects》](http://ithare.com/scaling-stateful-objects/) ，这是一本叫《Development&Deployment of Multiplayer Online Games》书中一章内容的节选，讨论了有状态和无状态的节点如何伸缩的问题。虽然还没有写完，但是可以给你一些很不错的基本概念和想法。
 
 ---
 
