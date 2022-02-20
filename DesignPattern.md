@@ -32,6 +32,8 @@
 
 - [《Scaling Stateful Objects》](http://ithare.com/scaling-stateful-objects/) ，这是一本叫《Development&Deployment of Multiplayer Online Games》书中一章内容的节选，讨论了有状态和无状态的节点如何伸缩的问题。虽然还没有写完，但是可以给你一些很不错的基本概念和想法。
 
+- [Scale Up vs Scale Out: Hidden Costs](https://blog.codinghorror.com/scaling-up-vs-scaling-out-hidden-costs/) ，Coding Horror 上的一篇有趣的文章，详细分析了可伸缩性架构的不同扩展方案（横向扩展或纵向扩展）所带来的成本差异，帮助你更好地选择合理的扩展方案，可以看看。
+
 ---
 
 ## 管理设计
