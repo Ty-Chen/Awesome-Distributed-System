@@ -34,6 +34,9 @@
 
 - [Scale Up vs Scale Out: Hidden Costs](https://blog.codinghorror.com/scaling-up-vs-scaling-out-hidden-costs/) ，Coding Horror 上的一篇有趣的文章，详细分析了可伸缩性架构的不同扩展方案（横向扩展或纵向扩展）所带来的成本差异，帮助你更好地选择合理的扩展方案，可以看看。
 
+
+- [Best Practices for Scaling Out](https://www.infoq.cn/article/hiXg6WRDjvNE0VNuwzPg) ，OpenShift 的一篇讨论 Scale out 最佳实践的文章。
+
 ---
 
 ## 管理设计
