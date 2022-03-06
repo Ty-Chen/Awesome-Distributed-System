@@ -37,7 +37,7 @@
 
 - [Best Practices for Scaling Out](https://www.infoq.cn/article/hiXg6WRDjvNE0VNuwzPg) ，OpenShift 的一篇讨论 Scale out 最佳实践的文章。
 
-- Scalability Worst Practices ，这篇文章讨论了一些最差实践，你需要小心避免。
+- [Scalability Worst Practices](https://www.infoq.com/articles/scalability-worst-practices/) ，这篇文章讨论了一些最差实践，你需要小心避免。
 
 - Reddit: Lessons Learned From Mistakes Made Scaling To 1 Billion Pageviews A Month ，Reddit 分享的一些关于系统扩展的经验教训。
 
