@@ -39,7 +39,7 @@
 
 - [Scalability Worst Practices](https://www.infoq.com/articles/scalability-worst-practices/) ，这篇文章讨论了一些最差实践，你需要小心避免。
 
-- Reddit: Lessons Learned From Mistakes Made Scaling To 1 Billion Pageviews A Month ，Reddit 分享的一些关于系统扩展的经验教训。
+- [Reddit: Lessons Learned From Mistakes Made Scaling To 1 Billion Pageviews A Month](http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html) ，Reddit 分享的一些关于系统扩展的经验教训。
 
 ---
 
