@@ -41,6 +41,8 @@
 
 - [Reddit: Lessons Learned From Mistakes Made Scaling To 1 Billion Pageviews A Month](http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html) ，Reddit 分享的一些关于系统扩展的经验教训。
 
+- 
+
 ---
 
 ## 管理设计
