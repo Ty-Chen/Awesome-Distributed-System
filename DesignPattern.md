@@ -41,7 +41,12 @@
 
 - [Reddit: Lessons Learned From Mistakes Made Scaling To 1 Billion Pageviews A Month](http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html) ，Reddit 分享的一些关于系统扩展的经验教训。
 
-- 
+- 下面是几篇关于自动化弹性伸缩的文章。
+  - Autoscaling Pinterest；
+  - Square: Autoscaling Based on Request Queuing；
+  - PayPal: Autoscaling Applications；
+  - Trivago: Your Definite Guide For Autoscaling Jenkins；
+  - Scryer: Netflix’s Predictive Auto Scaling Engine。
 
 ---
 
