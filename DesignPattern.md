@@ -44,7 +44,7 @@
 - 下面是几篇关于自动化弹性伸缩的文章。
   - [Autoscaling Pinterest](https://medium.com/@Pinterest_Engineering/auto-scaling-pinterest-df1d2beb4d64)；
   - [Square: Autoscaling Based on Request Queuing](https://developer.squareup.com/blog/autoscaling-based-on-request-queuing/)；
-  - PayPal: Autoscaling Applications；
+  - [PayPal: Autoscaling Applications](https://medium.com/paypal-tech/autoscaling-applications-paypal-fb5bb9fdb821)；
   - Trivago: Your Definite Guide For Autoscaling Jenkins；
   - Scryer: Netflix’s Predictive Auto Scaling Engine。
 
