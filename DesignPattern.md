@@ -45,7 +45,7 @@
   - [Autoscaling Pinterest](https://medium.com/@Pinterest_Engineering/auto-scaling-pinterest-df1d2beb4d64)；
   - [Square: Autoscaling Based on Request Queuing](https://developer.squareup.com/blog/autoscaling-based-on-request-queuing/)；
   - [PayPal: Autoscaling Applications](https://medium.com/paypal-tech/autoscaling-applications-paypal-fb5bb9fdb821)；
-  - Trivago: Your Definite Guide For Autoscaling Jenkins；
+  - [Trivago: Your Definite Guide For Autoscaling Jenkins](https://tech.trivago.com/post/autoscaling-jenkins-guide/)；
   - Scryer: Netflix’s Predictive Auto Scaling Engine。
 
 ---
